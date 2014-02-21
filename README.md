@@ -1,5 +1,3 @@
-Leap Motion Samples for CodeFellows Workshop
-
 leapmotion-playing
 ==================
 
