@@ -42,7 +42,7 @@
 						cubeInfo.advanceSpin();
 						return;
 					}
-					
+
 					if (frame.gestures.length > 0) {
 						for (var i = 0; i < frame.gestures.length; i++) {
 							if (frame.gestures[i].type === 'swipe') {
@@ -120,6 +120,7 @@
 			var xd = gesture.direction[0];
 			var yd = gesture.direction[1];
 			var zd = gesture.direction[2];
+
 			var speed = gesture.speed; // Note: Units are mm/s
 
 			var normalizationFactor = 300.0;
@@ -170,6 +171,7 @@
 
 		var lastGestures = '';
 		function updateStatus(hands, gestures) {
+
 			var displayMsg = 'No hands detected';
 			if (hands.length > 0) {
 				displayMsg = 'Hand(s) detected<br />';
@@ -180,8 +182,8 @@
 					var heightFt = Math.round(heightMm / 304.8);
 
 					displayMsg += '<br />Hand ' + i + '<br />';
-					displayMsg += 'Height: ' + heightMm + 'mm / ' 
-						+ heightIn + 'in / ' 
+					displayMsg += 'Height: ' + heightMm + 'mm / '
+						+ heightIn + 'in / '
 						+ heightFt + 'ft';
 					displayMsg += '<br />';
 				}
